@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-sm" id="home">
+        <div class="container">
+            <div class="row topbar ">
+                <div class="col-3 search " id="main-search">
+                    <a href="index.html">
+                            <img src="../img/linkedIn-logo.png" style="width: 3rem; height: 3rem" alt="" class="navbar-brand me-3">
+                    </a>
+                    <div class="input-group" id="search-input">
+                        <span id="search-icon" class="fas fa-search"></span>
+                        <input type="text" placeholder="search"
+                        class="form-control"
+                        id="search-text">
+                    </div>
+                    <div id="search-responsive" class="">
+                        <span class="text-muted"><i class="fas fa-search"></i></span>
+                        <span class="fs-6 d-none d-md-block">Search</span>
+                    </div>
+                </div>
+                <nav class="col-9" id="nav-list">
+                        <ul class="list navbar-nav" id="navListItem">
+                            <li class="nav-item active home-page">
+                                <a href="#" class="d-flex flex-column">
+                                    <i class="fas fa-home"></i>
+                                    <span class="d-none  d-md-inline">Home</span>
+                                </a>
+                                <span class="fas fa-dot-circle bg-white rounded-circle text-danger"></span>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="d-flex flex-column">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span class="d-none d-md-flex flex-nowrap"><p>My</p> <p>Network</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="d-flex flex-column">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span class="d-none d-md-inline">Jobs</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="d-flex flex-column">
+                                    <i class="fas fa-comment-dots"></i>
+                                    <span class="d-none d-md-inline">Messaging</span>
+                                </a>
+                            </li>
+                            <li class="nav-item notifications">
+                                <a href="#" class="d-flex flex-column">
+                                    <i class="fas fa-bell"></i>
+                                    <span class="d-none d-md-inline">Notifications</span>
+                                </a>
+                                <span class="bg-danger rounded-circle text-white ">7</span>
+                            </li>
+                            <li class="nav-item" id="me">
+                                <a href="#" class="d-flex flex-column" id="dropdownToggle" >
+                                    <img src="../img/my-photo.jfif" style="width: 2.5rem; height:2.5rem" alt="" class="rounded-circle">
+                                    <span class="d-none d-md-flex flex-nowrap align-items-center gap-2">Me <i class="fas fa-chevron-down fs-6"></i></span>
+                                </a>
+                                <div class="myDropdown" id="navDropdown">
+                                    <div id="me-list">
+                                    <div class="card">
+                                        <div class="container">
+                                            <div class=" info row pb-2 border-bottom">
+                                                <div class="card-body">
+                                                    <div class="col-3">
+                                                            <a href="#">
+                                                                <img src="../img/my-photo.jfif" alt="" class="rounded-circle">
+                                                            </a>
+                                                    </div>
+                                                    <div class="col-8">
+                                                            <a href="#">
+                                                                <h4 class="card-title">Hüseyin Şimşek</h4>
+                                                                <p class="card-text fs-5"><small>Frontend Developer</small></p>
+                                                            </a>
+                                                    </div>
+                                                    <button class="btn rounded-pill my-2 fs-5">View Profile</button>
+                                                </div>
+                                            </div>
+                                            <div class="account">
+                                                <h4 class="title fs-4 fw-bold text-start py-2">Account</h4>
+                                                <ul class="d-flex flex-column gap-2">
+                                                    <li>
+                                                        <i class="fas fa-award text-warning"></i>
+                                                        <a class="text-dark text-decoration-none fw-bold fs-5 ms-2" href="#">Try Premium For Free</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-dark" href="#"> Settings & Privacy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-dark" href="#"> Language</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-dark" href="#">Help</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="manage"></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </li>
+                            <li class="nav-item  border-start px-4 workCanvas " id="work">
+                                <div id="mySidenav" class="sidenav">
+                                    <div class="myOffcanvas1">
+                                        <div class="container">
+                                            <div class="header-wrap">
+                                                <h4 class="text-dark fw-bold fs-3 text-start my-2">Work</h4>
+                                                <a href="" class="closebtn fs-4 text-dark" onclick="closeNav()">X</a>
+                                            </div>
+                                            <div class="card offcanvas-content">
+                                                <div class="card-header bg-white fw-dark">
+                                                    <h5 class="card-title">Visit More LinkedIn Products</h5>
+                                                </div>
+                                                <div class="card-body products">
+                                                    <div class="product">
+                                                        <div class="product-item">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <a href="#" class="img-fluid"><img src="../img/work/learning.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-muted fs-6">Learning</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-item">
+                                                             <div class="card">
+                                                                <div class="card-body">
+                                                                    <a href="#" class=""><img src="../img/work/insights.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-muted fs-6">İnsights</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-item">
+                                                             <div class="card">
+                                                                <div class="card-body">
+                                                                    <a href="#" class=""><img src="../img/work/post-a-job.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-muted fs-6">Post a Job</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-item">
+                                                             <div class="card">
+                                                                <div class="card-body">
+                                                                    <a href="#" class=""><img src="../img/work/advertisement.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-muted fs-6">Advertise</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-item">
+                                                             <div class="card">
+                                                                <div class="card-body">
+                                                                    <a href="#" class=""><img src="../img/work/find-leads.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-muted fs-6">Find Leads</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-item">
+                                                             <div class="card">
+                                                                <div class="card-body">
+                                                                    <a href="#" class=""><img src="../img/work/groups.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-muted fs-6">Groups</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product services">
+                                                        <div class="product-item">
+                                                             <div class="card">
+                                                                <div class="card-body">
+                                                                    <a href="#" class=""><img src="../img/work/learning.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-muted fs-6">Services Marketplace</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product">
+                                                        <div class="product-item">
+                                                             <div class="card">
+                                                                <div class="card-body">
+                                                                    <a href="#" class=""><img src="../img/work/salary.png" alt=""></a>
+                                                                </div>
+                                                            </div>
+                                                            <span class="text-muted fs-6">Salary</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card offcanvas-footer">
+                                                <div class="card-header bg-white fw-dark">
+                                                    <h5 class="card-title">LinkedIn Business Services</h5>
+                                                </div>
+                                                <div class="card-body business-service py-2">
+                                                    <a href="#">
+                                                        <b class="fs-6">Talent Solutions</b>
+                                                        <p class="text-muted fs-6"> <small>Find, attract and recruit talent</small></p>
+                                                    </a>
+                                                    <a href="#">
+                                                        <b class="fs-6">Sales Solutions</b>
+                                                         <p class="text-muted fs-6"> <small>Unlock sales opportunities</small></p>
+                                                    </a>
+                                                    <a href="#" >
+                                                        <b class="fs-6">Post a job for free</b>
+                                                        <p class="text-muted fs-6"> <small>Get your job in front of quality candidates</small></p>
+                                                    </a>
+                                                    <a href="#" >
+                                                        <b class="fs-6">Marketing Solutions</b>
+                                                        <p class="text-muted fs-6"> <small>Acquire customers and grow your business</small>
+                                                                    </p>
+                                                    </a>
+                                                    <a href="#" >
+                                                        <b class="fs-6">Learning Solutions</b>
+                                                        <p class="text-muted fs-6"> <small>Develop talent across your organization</small></p>
+                                                    </a>
+                                                </div>
+                                                <a href="" class="for-more fs-5 text-dark">
+                                                    <p>Creat a Company Page <span class="fw-bold fs-3">+</span></p> 
+                                                </a>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                                <span>
+                                    <a href="#!" class="d-flex flex-column text-dark" id="worker">
+                                        <i class="fas fa-th"></i>
+                                        <span class="d-none d-md-flex flex-nowrap gap-2">Work <i class="fas fa-chevron-down"></i></span>
+                                    </a>
+                                </span>                              
+                            </li>
+                            <li class="nav-item pre " id="getPremium">
+                                <a href="#" class="d-flex flex-column">
+                                    <span class="">Try Premium for free</span>
+                                </a>
+                            </li>
+                            <li class="nav-item nav-item-responsive " id="openResponsiveList">
+                                <a class="" href="#" onclick="openNavList()" >
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                                <ul id="navİtemResponsiveMenu" class="bg-white d-flex justify-content-center align-items-center gap-2">
+                                </ul>
+                            </li>
+                        </ul>
+                </nav>       
+            </div>
+        </div>
+    </header>
+    <!-- MAİN -->
+    <main class="my-5 py-2" >
+        <section class="container" id="content">
+            <div class="container">
+                <div class="row">
+        <!-- Profile/left-aside -->
+                    <aside class="col-sm-4 col-md-4 col-lg-3" id="profile">
+                        <div class="card myProfile shadow-lg">
+                            <div class="card-body">
+                                <figure class="img-wrap border-bottom">
+                                    <img src="../img/linkedin-arka-plan.jpg" alt="" class="card-image rounded" style="height:7rem">
+                                    <img src="../img/my-photo.jfif" alt="" class="profile-image rounded-circle" style="height: 8rem; width:8rem">
+                                    <figcaption class="text-center img-description">
+                                        <a href="#"><h2 class="name card-title py-4 fs-4 fw-bold"> Hüseyin Şimşek</h2>
+                                        </a>
+                                        <p class="fs-5">Frontend Developer</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="interaction py-4 border-bottom">
+                                    <div class="view">
+                                        <bold class="text-primary float-end fs-5 fw-bold">381</bold>
+                                        <p>Who's viewed your profile</p>
+                                    </div>
+                                    <div class="impressions fs-5">
+                                        <bold class="text-primary float-end fs-5 fw-bold">8,216</bold>
+                                        <p>Who's viewed your profile</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="premium border-bottom d-block text-dark py-3">
+                                    <p><em class=" d-block text-muted"> <b>Access Exclusive tools & insights</b> </em></p>
+                                    <b class=" d-block"><span class=" fas fa-award text-warning"></span> Try Premium fo free</b>  
+                                </a>
+                                <a href="#" class="my-items border-bottom d-block text-dark py-3">
+                                    <img src="../img/kurdele.png" style="width:1rem; height:1.5rem" alt="">
+                                    <b class="d-lg-inline-block">My items</b>  
+                            </a>
+
+                            </div>
+                        </div>
+                        <div class="card shadow-lg my-2 community">
+                            <div class="card-body">
+                                <h5 class="V"><img src="../img/v.png" style="height: 4rem; width: 4rem;" alt=""></h5>
+                                <b class="fs-2 border-bottom py-3">Vortech</b>
+                                <a href="#" class="vortech d-block py-3 my-3 text-dark">
+                                    <span class="notifications">
+                                        <bold class="text-primary float-end fs-5 fw-bold">381</bold>
+                                        <p class="">Page Notifications</p>
+                                    </span>
+                                    <span class="visitors">
+                                        <bold class="text-primary float-end fs-5  fw-bold">8,216</bold>
+                                        <p class="">Page Visitors</p>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg my-2 visitation">
+                            <div class="card-body">
+                                <div class="recent py-2">
+                                    <h4 class="card-title text-start fs-5 ">Recent</h4>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-tv"></i>
+                                        ABP Community Talks 2022.5 vesaire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <a href="#" class="text-dark d-block text-truncate "> 
+                                        <i class="fas fa-user-friends"></i>
+                                        UI/UX User Experience İnteranction vesaire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-tv"></i>
+                                        SİBER GÜVENLİK HAFTASI 2021 vesaire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-tv"></i>
+                                        WEBINAR.JetBrains Space'i kevesaire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-tv"></i>
+                                    HACKING AND SECURİNG MS saire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>                              
+                                </div>
+                                <div class="group py-2">
+                                    <h4 class="card-title text-start fs-5">Group</h4>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-tv"></i>
+                                        ABP Community Talks 2022.5 vesaire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-user-friends"></i>
+                                        UI/UX User Experience İnteranction vesaire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-tv"></i>
+                                        SİBER GÜVENLİK HAFTASI 2021 vesaire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-tv"></i>
+                                        WEBINAR.JetBrains Space'i kevesaire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <a href="#" class="text-dark d-block text-truncate"> 
+                                        <i class="fas fa-tv"></i>
+                                    HACKING AND SECURİNG MS saire vesaire vesaire Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <a href="showMore1" class=" fs-5 collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#showMore1"
+                                            >Show More <i class="fas fa-chevron-down"></i></a>
+                                            <ul class="collapse accordion-collapse ps-0" id="showMore1">
+                                                <li>
+                                                    <a href="#" class="text-dark d-block text-truncate fs-6"> 
+                                                        <i class="fas fa-tv"></i>
+                                                    HACKING AND SECURİNG MS saire vesaire vesaire Lorem ipsum dolor sit amet.
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-dark d-block text-truncate fs-6"> 
+                                                        <i class="fas fa-tv"></i>
+                                                    HACKING AND SECURİNG MS saire vesaire vesaire Lorem ipsum dolor sit amet.
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-dark d-block text-truncate fs-6"> 
+                                                        <i class="fas fa-tv"></i>
+                                                    HACKING AND SECURİNG MS saire vesaire vesaire Lorem ipsum dolor sit amet.
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-dark d-block text-truncate fs-6"> 
+                                                        <i class="fas fa-tv"></i>
+                                                    HACKING AND SECURİNG MS saire vesaire vesaire Lorem ipsum dolor sit amet.
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>                            
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+        <!-- Timeline // midlle-section -->
+                    <section class="col-sm-8 col-md-8 col-lg-5 " id="timeLine">
+                        <div class="post">
+                            <div class="container">
+                                <div class="card">
+                                    <div class="card-body">
+                                    <div class="write-post row  flex-nowrap">
+                                        <div class="col-2">
+                                            <img src="../img/my-photo.jfif" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-10">
+                                            <input type="text" class="form-control " placeholder="Start a post">
+                                        </div>
+                                    </div>
+                                    <div class="add-file d-flex gap-5">
+                                        <a href="#" class="photo fs-5">
+                                            <i class="fas fa-image fs-3"></i>
+                                            <span>Photo</span>
+                                        </a>
+                                        <a href="#" class="video fs-5">
+                                            <img src="../img/video.png" style="width: 18px;height:16px" alt="">
+                                            <span>Video</span>
+                                        </a>
+                                        <a href="#" class="event fs-5">
+                                        <img src="../img/calendar.png" style="width: 15px;height:13px"  alt="">
+                                            <span>Event</span>
+                                        </a>
+                                        <a href="#" class="article fs-5">
+                                            <img src="../img/paid-articles.png" style="width: 15px;height:13px" alt="">
+                                            <span>Write article</span>
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advertisement">
+                            <div class="container">
+                                <div class="card">
+                                    <div class="tag card-body">
+                                            <div class="brand mb-3">
+                                                <img src="../img/green-tea.png" style="width: 2rem; height:2rem" alt="" class="symbol rounded-circle">
+                                                <div class="header">
+                                                    <h4 class="title fw-bold fs-5">ASML</h4>
+                                                    <span class="text-muted fs-5"><small>Promoted</small> </span>
+                                                </div>
+                                                <div class="list dropstart">
+                                                    <!-- dropstart ile tabloyu soldan başlatır, dropdown-center yaparsan tam merkeze açar -->
+                                                    <a href="brand-dropdown" data-bs-target="brand-dropdown" data-bs-toggle="dropdown" >
+                                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" id="brand-dropdown">
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Save</b>
+                                                                <p class="text-muted"> <small>Save for later</small></p>
+                                                            </a>
+                                                            <!-- fontsize'ını arttırırsan liste içerisinde büyük gösterir :) -->
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item fs-3">
+                                                                <b class="fs-5">Copy link to post</b>
+                                                                <p class="text-muted"> <small>---</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Embed this Post</b>
+                                                                <p class="text-muted"> <small>copy and paste embed post on your site</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">I dont Want to see this!</b>
+                                                                <p class="text-muted"> <small>Let us to know why you dont want to see this post</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Unfollow LinkedIn</b>
+                                                                <p class="text-muted"> <small>Unfollow and stop seeing  posts from linkedIn in feed</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Mute</b>
+                                                                <p class="text-muted"> <small>Stop seeing post from somebody...</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Report this post</b>
+                                                                <p class="text-muted"> <small>This post is offensive or the account hacked</small></p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="lead">With ASML, you can develop software that's crucial to the development of next-generation microchips. Take part in creating tomorrow's technology</p>
+                                    </div>
+                                    <a class="link" href="#">
+                                        <img src="../img/linkedin-arka-plan.jpg" style="height: 300px;" alt="">
+                                        <div>
+                                            <h5 class="fw-bold text-black">Gençler haftada 4 gün çalışmak istiyor</h5>
+                                            <span class="text-muted"><small>marketinturkiye.com.tr &#x2688; 3 min read </small></span>
+                                        </div>
+                                    </a>
+                                    <div class="opinion card-body py-1">
+                                        <div class="shares float-end">
+                                            <a href="#" class=" text-muted fs-5 "> <small>3.687 comments</small> </a>   
+                                            <i class="fas fa-circle"></i> 
+                                            <a href="#" class=" text-muted fs-5"> <small>1.257 shares</small> </a>    
+                                        </div>
+                                        <a href="#" class="likes text-muted fs-6"> <small> 
+                                            <div class="icons">
+                                                <img src="../img/emojies/like.svg" alt="" style="width: 1.5rem;" class="like animate__animated animate__bounce">
+                                                <img src="../img/emojies/funny.svg" alt="" style="width: 1.5rem;" class="funny animate__animated animate__bounce">
+                                                <img src="../img/emojies/support.svg" alt="" style="width: 1.5rem;" class="support animate__animated animate__bounce">
+                                            </div>
+                                            <b class="text">359</b>
+                                        </small> 
+                                        </a>
+                                        <div class="evaluate pt-3">
+                                            <a href="#" class="like fs-5">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span>Like</span>
+                                                <div id="likeler" class="like-methods d-flex gap-2 shadow-lg">
+                                                    <img src="../img/emojies/like.svg" alt="">
+                                                    <img src="../img/emojies/celebrating.svg" alt="">
+                                                    <img src="../img/emojies/support.svg" alt="">
+                                                    <img src="../img/emojies/funny.svg" alt="">
+                                                    <img src="../img/emojies/love.svg" alt="">
+                                                    <img src="../img/emojies/insightfull.svg" alt="">
+                                                    <img src="../img/emojies/currious.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#" class="comment fs-5">
+                                                <i class="far fa-comment-dots"></i>
+                                                <span>Comment</span>
+                                            </a>
+                                            <a href="#" class="share fs-5">
+                                                <i class="fas fa-share"></i>
+                                                <span>Share</span>
+                                            </a>
+                                            <a href="#" class="send fs-5">
+                                                <i class="far fa-paper-plane"></i>
+                                                <span>Send</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="write-comment row">
+                                            <div class="col-2">
+                                                <img src="../img/my-photo.jfif"  alt="" class="img-fluid" style="width: 5rem; height:5.1rem"> 
+                                            </div>
+                                            <div class="col-10 comment-wrap">
+                                                <input type="text" class="form-control " placeholder="Start a post">
+                                                <a href="#" class="far fa-smile add-emoji"></a>
+                                                <label class="fas fa-image input-container">
+                                                    <input type="file" name="" id="" class="choose-file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advertisement">
+                            <div class="container">
+                                <div class="card">
+                                    <div class="tag card-body">
+                                            <div class="brand mb-3">
+                                                <img src="../img/my-photo.jfif
+                                                " style="width: 2rem; height:2rem" alt="" class="symbol rounded-circle">
+                                                <div class="header">
+                                                    <h4 class="title fw-bold fs-5">Hüseyin Şimşek</h4>
+                                                    <span class="text-muted fs-5"><small>Promoted</small> </span>
+                                                </div>
+                                                <div class="list dropstart">
+                                                    <!-- dropstart ile tabloyu soldan başlatır, dropdown-center yaparsan tam merkeze açar -->
+                                                    <a href="brand-dropdown" data-bs-target="brand-dropdown" data-bs-toggle="dropdown" >
+                                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" id="brand-dropdown">
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Save</b>
+                                                                <p class="text-muted"> <small>Save for later</small></p>
+                                                            </a>
+                                                            <!-- fontsize'ını arttırırsan liste içerisinde büyük gösterir :) -->
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item fs-3">
+                                                                <b class="fs-5">Copy link to post</b>
+                                                                <p class="text-muted"> <small>---</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Embed this Post</b>
+                                                                <p class="text-muted"> <small>copy and paste embed post on your site</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">I dont Want to see this!</b>
+                                                                <p class="text-muted"> <small>Let us to know why you dont want to see this post</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Unfollow LinkedIn</b>
+                                                                <p class="text-muted"> <small>Unfollow and stop seeing  posts from linkedIn in feed</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Mute</b>
+                                                                <p class="text-muted"> <small>Stop seeing post from somebody...</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Report this post</b>
+                                                                <p class="text-muted"> <small>This post is offensive or the account hacked</small></p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="lead"> you can develop software that's crucial to the development of next-generation microchips. Take part in creating tomorrow's technology Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, asperiores impedit voluptatem accusantium atque provident libero mollitia eius laboriosam sint placeat, exercitationem quaerat soluta commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vel eius sapiente quis rerum magnam!</p>
+                                    </div>
+
+                                    <div class="opinion card-body py-1">
+                                        <div class="shares float-end">
+                                            <a href="#" class=" text-muted fs-5 "> <small>3.687 comments</small> </a>   
+                                            <i class="fas fa-circle"></i> 
+                                            <a href="#" class=" text-muted fs-5"> <small>1.257 shares</small> </a>    
+                                        </div>
+                                        <a href="#" class="likes text-muted fs-6"> <small> 
+                                            <div class="icons">
+                                                <img src="../img/emojies/like.svg" alt="" style="width: 1.5rem;" class="like animate__animated animate__bounce">
+                                                <img src="../img/emojies/funny.svg" alt="" style="width: 1.5rem;" class="funny animate__animated animate__bounce">
+                                                <img src="../img/emojies/support.svg" alt="" style="width: 1.5rem;" class="support animate__animated animate__bounce">
+                                            </div>
+                                            <b class="text">359</b>
+                                        </small> 
+                                        </a>
+                                        <div class="evaluate pt-3">
+                                            <a href="#" class="like fs-5">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span>Like</span>
+                                                <div id="likeler" class="like-methods d-flex gap-2 shadow-lg">
+                                                    <img src="../img/emojies/like.svg" alt="">
+                                                    <img src="../img/emojies/celebrating.svg" alt="">
+                                                    <img src="../img/emojies/support.svg" alt="">
+                                                    <img src="../img/emojies/funny.svg" alt="">
+                                                    <img src="../img/emojies/love.svg" alt="">
+                                                    <img src="../img/emojies/insightfull.svg" alt="">
+                                                    <img src="../img/emojies/currious.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#" class="comment fs-5">
+                                                <i class="far fa-comment-dots"></i>
+                                                <span>Comment</span>
+                                            </a>
+                                            <a href="#" class="share fs-5">
+                                                <i class="fas fa-share"></i>
+                                                <span>Share</span>
+                                            </a>
+                                            <a href="#" class="send fs-5">
+                                                <i class="far fa-paper-plane"></i>
+                                                <span>Send</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="write-comment row">
+                                            <div class="col-2">
+                                                <img src="../img/my-photo.jfif"  alt="" class="img-fluid" style="width: 5rem; height:5.1rem"> 
+                                            </div>
+                                            <div class="col-10 comment-wrap">
+                                                <input type="text" class="form-control " placeholder="Start a post">
+                                                <a href="#" class="far fa-smile add-emoji"></a>
+                                                <label class="fas fa-image input-container">
+                                                    <input type="file" name="" id="" class="choose-file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advertisement">
+                            <div class="container">
+                                <div class="card">
+                                    <div class="tag card-body">
+                                            <div class="brand mb-3">
+                                                <img src="../img/v.png" style="width: 2rem; height:2rem" alt="" class="symbol rounded-circle">
+                                                <div class="header">
+                                                    <h4 class="title fw-bold fs-5">Vortech</h4>
+                                                    <span class="text-muted fs-5"><small>Promoted</small> </span>
+                                                </div>
+                                                <div class="list dropstart">
+                                                    <!-- dropstart ile tabloyu soldan başlatır, dropdown-center yaparsan tam merkeze açar -->
+                                                    <a href="brand-dropdown" data-bs-target="brand-dropdown" data-bs-toggle="dropdown" >
+                                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" id="brand-dropdown">
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Save</b>
+                                                                <p class="text-muted"> <small>Save for later</small></p>
+                                                            </a>
+                                                            <!-- fontsize'ını arttırırsan liste içerisinde büyük gösterir :) -->
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item fs-3">
+                                                                <b class="fs-5">Copy link to post</b>
+                                                                <p class="text-muted"> <small>---</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Embed this Post</b>
+                                                                <p class="text-muted"> <small>copy and paste embed post on your site</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">I dont Want to see this!</b>
+                                                                <p class="text-muted"> <small>Let us to know why you dont want to see this post</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Unfollow LinkedIn</b>
+                                                                <p class="text-muted"> <small>Unfollow and stop seeing  posts from linkedIn in feed</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Mute</b>
+                                                                <p class="text-muted"> <small>Stop seeing post from somebody...</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Report this post</b>
+                                                                <p class="text-muted"> <small>This post is offensive or the account hacked</small></p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="lead">With ASML, you can develop software that's crucial to the development of next-generation microchips. Take part in creating tomorrow's technology</p>
+                                    </div>
+                                    <a class="link" href="#">
+                                        <img src="../img/timeline.jpg" style="height: 300px;" alt="">
+                                        <div>
+                                            <h5 class="fw-bold text-black">Noone can survive</h5>
+                                            <span class="text-muted"><small>suss.com.tr &#x2688; 3 min read </small></span>
+                                        </div>
+                                    </a>
+                                    <div class="opinion card-body py-1">
+                                        <div class="shares float-end">
+                                            <a href="#" class=" text-muted fs-5 "> <small>3.687 comments</small> </a>   
+                                            <i class="fas fa-circle"></i> 
+                                            <a href="#" class=" text-muted fs-5"> <small>1.257 shares</small> </a>    
+                                        </div>
+                                        <a href="#" class="likes text-muted fs-6"> <small> 
+                                            <div class="icons">
+                                                <img src="../img/emojies/like.svg" alt="" style="width: 1.5rem;" class="like animate__animated animate__bounce">
+                                                <img src="../img/emojies/funny.svg" alt="" style="width: 1.5rem;" class="funny animate__animated animate__bounce">
+                                                <img src="../img/emojies/support.svg" alt="" style="width: 1.5rem;" class="support animate__animated animate__bounce">
+                                            </div>
+                                            <b class="text">359</b>
+                                        </small> 
+                                        </a>
+                                        <div class="evaluate pt-3">
+                                            <a href="#" class="like fs-5">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span>Like</span>
+                                                <div id="likeler" class="like-methods d-flex gap-2 shadow-lg">
+                                                    <img src="../img/emojies/like.svg" alt="">
+                                                    <img src="../img/emojies/celebrating.svg" alt="">
+                                                    <img src="../img/emojies/support.svg" alt="">
+                                                    <img src="../img/emojies/funny.svg" alt="">
+                                                    <img src="../img/emojies/love.svg" alt="">
+                                                    <img src="../img/emojies/insightfull.svg" alt="">
+                                                    <img src="../img/emojies/currious.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#" class="comment fs-5">
+                                                <i class="far fa-comment-dots"></i>
+                                                <span>Comment</span>
+                                            </a>
+                                            <a href="#" class="share fs-5">
+                                                <i class="fas fa-share"></i>
+                                                <span>Share</span>
+                                            </a>
+                                            <a href="#" class="send fs-5">
+                                                <i class="far fa-paper-plane"></i>
+                                                <span>Send</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="write-comment row">
+                                            <div class="col-2">
+                                                <img src="../img/my-photo.jfif"  alt="" class="img-fluid" style="width: 5rem; height:5.1rem"> 
+                                            </div>
+                                            <div class="col-10 comment-wrap">
+                                                <input type="text" class="form-control " placeholder="Start a post">
+                                                <a href="#" class="far fa-smile add-emoji"></a>
+                                                <label class="fas fa-image input-container">
+                                                    <input type="file" name="" id="" class="choose-file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advertisement">
+                            <div class="container">
+                                <div class="card">
+                                    <div class="tag card-body">
+                                            <div class="brand mb-3">
+                                                <img src="../img/follower-1.jfif" style="width: 2rem; height:2rem" alt="" class="symbol rounded-circle">
+                                                <div class="header">
+                                                    <h4 class="title fw-bold fs-5">ASML</h4>
+                                                    <span class="text-muted fs-5"><small>Promoted</small> </span>
+                                                </div>
+                                                <div class="list dropstart">
+                                                    <!-- dropstart ile tabloyu soldan başlatır, dropdown-center yaparsan tam merkeze açar -->
+                                                    <a href="brand-dropdown" data-bs-target="brand-dropdown" data-bs-toggle="dropdown" >
+                                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" id="brand-dropdown">
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Save</b>
+                                                                <p class="text-muted"> <small>Save for later</small></p>
+                                                            </a>
+                                                            <!-- fontsize'ını arttırırsan liste içerisinde büyük gösterir :) -->
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item fs-3">
+                                                                <b class="fs-5">Copy link to post</b>
+                                                                <p class="text-muted"> <small>---</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Embed this Post</b>
+                                                                <p class="text-muted"> <small>copy and paste embed post on your site</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">I dont Want to see this!</b>
+                                                                <p class="text-muted"> <small>Let us to know why you dont want to see this post</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Unfollow LinkedIn</b>
+                                                                <p class="text-muted"> <small>Unfollow and stop seeing  posts from linkedIn in feed</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Mute</b>
+                                                                <p class="text-muted"> <small>Stop seeing post from somebody...</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Report this post</b>
+                                                                <p class="text-muted"> <small>This post is offensive or the account hacked</small></p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="lead">With ASML, you can develop software that's crucial to the development of next-generation microchips. Take part in creating tomorrow's technology</p>
+                                    </div>
+                                    <a class="link" href="#">
+                                        <img src="../img/timeline-2.jpg" style="height: 300px;" alt="">
+                                        <div>
+                                            <h5 class="fw-bold text-black">Gençler haftada 4 gün çalışmak istiyor</h5>
+                                            <span class="text-muted"><small>marketinturkiye.com.tr &#x2688; 3 min read </small></span>
+                                        </div>
+                                    </a>
+                                    <div class="opinion card-body py-1">
+                                        <div class="shares float-end">
+                                            <a href="#" class=" text-muted fs-5 "> <small>3.687 comments</small> </a>   
+                                            <i class="fas fa-circle"></i> 
+                                            <a href="#" class=" text-muted fs-5"> <small>1.257 shares</small> </a>    
+                                        </div>
+                                        <a href="#" class="likes text-muted fs-6"> <small> 
+                                            <div class="icons">
+                                                <img src="../img/emojies/like.svg" alt="" style="width: 1.5rem;" class="like animate__animated animate__bounce">
+                                                <img src="../img/emojies/funny.svg" alt="" style="width: 1.5rem;" class="funny animate__animated animate__bounce">
+                                                <img src="../img/emojies/support.svg" alt="" style="width: 1.5rem;" class="support animate__animated animate__bounce">
+                                            </div>
+                                            <b class="text">359</b>
+                                        </small> 
+                                        </a>
+                                        <div class="evaluate pt-3">
+                                            <a href="#" class="like fs-5">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span>Like</span>
+                                                <div id="likeler" class="like-methods d-flex gap-2 shadow-lg">
+                                                    <img src="../img/emojies/like.svg" alt="">
+                                                    <img src="../img/emojies/celebrating.svg" alt="">
+                                                    <img src="../img/emojies/support.svg" alt="">
+                                                    <img src="../img/emojies/funny.svg" alt="">
+                                                    <img src="../img/emojies/love.svg" alt="">
+                                                    <img src="../img/emojies/insightfull.svg" alt="">
+                                                    <img src="../img/emojies/currious.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#" class="comment fs-5">
+                                                <i class="far fa-comment-dots"></i>
+                                                <span>Comment</span>
+                                            </a>
+                                            <a href="#" class="share fs-5">
+                                                <i class="fas fa-share"></i>
+                                                <span>Share</span>
+                                            </a>
+                                            <a href="#" class="send fs-5">
+                                                <i class="far fa-paper-plane"></i>
+                                                <span>Send</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="write-comment row">
+                                            <div class="col-2">
+                                                <img src="../img/my-photo.jfif"  alt="" class="img-fluid" style="width: 5rem; height:5.1rem"> 
+                                            </div>
+                                            <div class="col-10 comment-wrap">
+                                                <input type="text" class="form-control " placeholder="Start a post">
+                                                <a href="#" class="far fa-smile add-emoji"></a>
+                                                <label class="fas fa-image input-container">
+                                                    <input type="file" name="" id="" class="choose-file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advertisement">
+                            <div class="container">
+                                <div class="card">
+                                    <div class="tag card-body">
+                                            <div class="brand mb-3">
+                                                <img src="../img/follower-2.jfif" style="width: 2rem; height:2rem" alt="" class="symbol rounded-circle">
+                                                <div class="header">
+                                                    <h4 class="title fw-bold fs-5">ASML</h4>
+                                                    <span class="text-muted fs-5"><small>Promoted</small> </span>
+                                                </div>
+                                                <div class="list dropstart">
+                                                    <!-- dropstart ile tabloyu soldan başlatır, dropdown-center yaparsan tam merkeze açar -->
+                                                    <a href="brand-dropdown" data-bs-target="brand-dropdown" data-bs-toggle="dropdown" >
+                                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu" id="brand-dropdown">
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Save</b>
+                                                                <p class="text-muted"> <small>Save for later</small></p>
+                                                            </a>
+                                                            <!-- fontsize'ını arttırırsan liste içerisinde büyük gösterir :) -->
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item fs-3">
+                                                                <b class="fs-5">Copy link to post</b>
+                                                                <p class="text-muted"> <small>---</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Embed this Post</b>
+                                                                <p class="text-muted"> <small>copy and paste embed post on your site</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">I dont Want to see this!</b>
+                                                                <p class="text-muted"> <small>Let us to know why you dont want to see this post</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Unfollow LinkedIn</b>
+                                                                <p class="text-muted"> <small>Unfollow and stop seeing  posts from linkedIn in feed</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Mute</b>
+                                                                <p class="text-muted"> <small>Stop seeing post from somebody...</small></p>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a href="#" class="dropdown-item">
+                                                                <b class="fs-5">Report this post</b>
+                                                                <p class="text-muted"> <small>This post is offensive or the account hacked</small></p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="lead">With ASML, you can develop software that's crucial to the development of next-generation microchips. Take part in creating tomorrow's technology</p>
+                                    </div>
+                                    <a class="link" href="#">
+                                        <img src="../img/timeline-3.jpg" style="height: 300px;" alt="">
+                                        <div>
+                                            <h5 class="fw-bold text-black">Gençler haftada 4 gün çalışmak istiyor</h5>
+                                            <span class="text-muted"><small>marketinturkiye.com.tr &#x2688; 3 min read </small></span>
+                                        </div>
+                                    </a>
+                                    <div class="opinion card-body py-1">
+                                        <div class="shares float-end">
+                                            <a href="#" class=" text-muted fs-5 "> <small>3.687 comments</small> </a>   
+                                            <i class="fas fa-circle"></i> 
+                                            <a href="#" class=" text-muted fs-5"> <small>1.257 shares</small> </a>    
+                                        </div>
+                                        <a href="#" class="likes text-muted fs-6"> <small> 
+                                            <div class="icons">
+                                                <img src="../img/emojies/like.svg" alt="" style="width: 1.5rem;" class="like animate__animated animate__bounce">
+                                                <img src="../img/emojies/funny.svg" alt="" style="width: 1.5rem;" class="funny animate__animated animate__bounce">
+                                                <img src="../img/emojies/support.svg" alt="" style="width: 1.5rem;" class="support animate__animated animate__bounce">
+                                            </div>
+                                            <b class="text">359</b>
+                                        </small> 
+                                        </a>
+                                        <div class="evaluate pt-3">
+                                            <a href="#" class="like fs-5">
+                                                <i class="far fa-thumbs-up"></i>
+                                                <span>Like</span>
+                                                <div id="likeler" class="like-methods d-flex gap-2 shadow-lg">
+                                                    <img src="../img/emojies/like.svg" alt="">
+                                                    <img src="../img/emojies/celebrating.svg" alt="">
+                                                    <img src="../img/emojies/support.svg" alt="">
+                                                    <img src="../img/emojies/funny.svg" alt="">
+                                                    <img src="../img/emojies/love.svg" alt="">
+                                                    <img src="../img/emojies/insightfull.svg" alt="">
+                                                    <img src="../img/emojies/currious.svg" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#" class="comment fs-5">
+                                                <i class="far fa-comment-dots"></i>
+                                                <span>Comment</span>
+                                            </a>
+                                            <a href="#" class="share fs-5">
+                                                <i class="fas fa-share"></i>
+                                                <span>Share</span>
+                                            </a>
+                                            <a href="#" class="send fs-5">
+                                                <i class="far fa-paper-plane"></i>
+                                                <span>Send</span>
+                                            </a>
+
+                                        </div>
+                                        <div class="write-comment row">
+                                            <div class="col-2">
+                                                <img src="../img/my-photo.jfif"  alt="" class="img-fluid" style="width: 5rem; height:5.1rem"> 
+                                            </div>
+                                            <div class="col-10 comment-wrap">
+                                                <input type="text" class="form-control " placeholder="Start a post">
+                                                <a href="#" class="far fa-smile add-emoji"></a>
+                                                <label class="fas fa-image input-container">
+                                                    <input type="file" name="" id="" class="choose-file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+        <!-- Feed-follow-modüle // right-side -->
+                    <aside class="d-lg-block d-sm-none d-block col-lg-4" id="feed">
+                        <div class="container">
+                            <div class="card feed-card">
+                                <div class="card-body">
+                                    <div class="header mb-4">
+                                        <span class="fas fa-info float-end"></span>
+                                        <h5 class="title fw-bold">Add to your feed</h5>
+                                    </div>
+
+                                    <div class="user row justify-content-center">
+                                        <div class="col-2">
+                                            <img src="../img/follower-1.jfif" alt="" class="card-image rounded-circle">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5 class="title mb-0">Soner Canko</h5>
+                                            <span class="text-muted fs-6 mt-1"><small>Advisor</small></span>
+                                        </div>
+                                        <button class="btn btn-light fs-5 follow rounded-pill text-muted"> <i class="fas fa-plus"></i> <span>Follow</span> </button>
+                                    </div>
+                                    <div class="user row justify-content-center my-4">
+                                        <div class="col-2">
+                                            <img src="../img/follower-2.jfif" alt="" class="card-image rounded-circle">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5 class="title mb-0">Etika Srivastava</h5>
+                                            <span class="text-muted fs-6 mt-1"><small>Talent Acquisition HCL Lucknow || SAP</small></span>
+                                            <span class="text-muted fs-6 mt-1"><small> <em>Hiring II</em> </small></span>
+                                        </div>
+                                        <button class="btn btn-light fs-5 follow rounded-pill text-muted"> <i class="fas fa-plus"></i> <span>Follow</span></button>
+                                    </div>
+                                    <div class="user row justify-content-center">
+                                        <div class="col-2">
+                                            <img src="../img/follower-3.jfif" alt="" class="card-image rounded-circle">
+                                        </div>
+                                        <div class="col-10">
+                                            <h5 class="title mb-0">Chandrika Sharma</h5>
+                                            <span class="text-muted fs-6 mt-1"><small>HR Manager(Hiring for SEO , BDM, BDE )</small></span>
+                                        </div>
+                                        <button class="btn btn-light fs-5 follow rounded-pill text-muted"> <i class="fas fa-plus"></i> <span>Follow</span></button>
+                                    </div>
+                                    <a class="fs-5 d-inline-block mt-5 text-dark recommendations" href="#">View all recommendations <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <footer id="advertisement" class="my-2">
+                                <div class="card rounded-right img-wrap">
+                                    <div class="bg-white">
+                                        <img class="px-3" src="../img/advertisement.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="bg-third mt-2">
+                                    <div class="footer">
+                                        <div class="group1">
+                                            <a class="text-muted text-dark about" href="#">About</a>
+                                            <a class="text-muted text-dark accessibility" href="#">Accessibility</a>
+                                            <a class="text-muted text-dark help-center" href="#">Help Center</a>
+                                        </div>
+                                        <div class="group2" id="privacyTerms">
+                                            <div class="privacy-terms">
+                                                <a onclick="openPrivacyList()"class="text-muted text-dark" id="btnPrivacy" href="#!">Privacy & Terms <i class="fas fa-chevron-down"></i></a>
+                                                <div id="privacyList" class="list d-flex flex-column justify-content-center">
+                                                    <a href="">Privacy Policy</a>
+                                                    <a href="" >User Agreement</a>
+                                                    <a href="" >Cookie Policy</a>
+                                                    <a href="" >Copyright Policy</a>
+                                                </div>
+                                            </div>
+                                            <a class="text-muted text-dark ad-choices" href="#">Ad Choices</a>
+                                        </div>
+                                        <div class="group3">
+                                            <a class="text-muted text-dark advertising" href="#">Advertising</a>
+                                            <div id="businessServices" class="card-body">
+                                                <a class="text-muted text-dark businessServices" href="#!">Business Services<i class="fas fa-chevron-down"></i></a>
+                                                <div class="card"id="bussinessServicesDropdown">
+                                                    <div class=" card-body">
+                                                        <a href="#!" class="business-services-item">
+                                                            <b class="">Talent Solutions</b>
+                                                            <p class="text-muted"> <small>Find, attract and recruit talent</small></p>
+                                                        </a>
+                                                        <a href="#!" class="business-services-item">
+                                                            <b class="">Sales Solutions</b>
+                                                             <p class="text-muted"> <small>Unlock sales opportunities</small></p>
+                                                        </a>
+                                                        <a href="#!" class="business-services-item">
+                                                            <b class="">Post a job for free</b>
+                                                            <p class="text-muted"> <small>Get your job in front of quality candidates</small></p>
+                                                        </a>
+                                                        <a href="#!" class="business-services-item">
+                                                            <b class="">Marketing Solutions</b>
+                                                            <p class="text-muted"> <small>Acquire customers and grow your business</small>
+                                                                        </p>
+                                                        </a>
+                                                        <a href="#!" class="business-services-item">
+                                                            <b class="">Learning Solutions</b>
+                                                            <p class="text-muted"> <small>Develop talent across your organization</small></p>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#!" class="for-more fs-5 py-2 text-dark">Creat a Company Page <span class="fw-bold fs-3">+</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="group4">
+                                                <a class="text-muted text-dark get-the-linkedin-app" href="#">Get the LinkedIn app</a>
+                                                <a class="text-muted text-dark more" href="#">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <p > <span class="fw-bold text-primary">Linked</span><span class="text-white bg-primary fw-bold">in</span> LinkedIn Corporation &copy; 2022</p>
+                            </footer>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/scricpt.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+
+
+    </script>
+</body>
+</html>
